@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: justify;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f1e435;
+  padding: 15px 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(20, 82, 251);
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #121110;
+}
+
+/* Dark Mode Navbar */
+.dark-mode .navbar {
+  background-color: #333;
+}
+
+.dark-mode .navbar a {
+  color: #ffdd57;
+}
+
+/* Container Styling */
+.card {
+  background: rgba(110, 141, 184, 0.748);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.dark-mode .card {
+  background: #1e1e1e;
+  color: white;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Input Fields */
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.dark-mode .form-control {
+  background: #2c2c2c;
+  color: white;
+  border: 1px solid #444;
+}
+
+/* Profile Picture */
+.profile-img {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  object-fit: auto;
+  margin-top: 10px;
+  border: 3px solid #007bff;
+}
+
+.dark-mode .profile-img {
+  border: 3px solid #ffdd57;
+}
+
+/* Button Styling */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
